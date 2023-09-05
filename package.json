@@ -1,0 +1,25 @@
+{
+  "name": "sequelize-prepared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "sequelize:db1:migrate": "sequelize --options-path ./db1_conf.js --env db1Env db:migrate",
+    "sequelize:db1:migrate:undo": "sequelize --options-path ./db1_conf.js --env db1Env db:migrate:undo",
+    "sequelize:db2:migrate": "sequelize --options-path ./db2_conf.js --env db2Env db:migrate",
+    "sequelize:db2:migrate:undo": "sequelize --options-path ./db2_conf.js --env db2Env db:migrate:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
